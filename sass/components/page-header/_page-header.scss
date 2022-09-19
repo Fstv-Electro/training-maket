@@ -1,0 +1,14 @@
+.page-header {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 25px;
+}
+
+.page-header .container {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

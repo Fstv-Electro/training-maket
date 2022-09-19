@@ -1,0 +1,5 @@
+.page-header_link {
+    @extend %list;
+    @extend %title;
+    color: $text-accent;
+}
