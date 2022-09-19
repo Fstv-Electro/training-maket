@@ -272,7 +272,7 @@ body {
   line-height: 1.3;
 }
 
-.page-header_link {
+.page-header_link, .list {
   list-style: none;
   text-decoration: none;
   padding: 0;
@@ -347,7 +347,8 @@ img {
   position: relative;
   margin: 0;
   padding: 0;
-  height: 25px;
+  height: 50px;
+  background-color: #ffe7e7;
 }
 
 .page-header .container {
@@ -369,13 +370,20 @@ img {
   margin: 0;
   padding: 0;
   width: 130px;
-  height: 50px;
-  background-color: #ffffff;
+  background-color: transparent;
 }
 
 .menu_lng {
   background-color: #ffffff;
   border-color: transparent;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+}
+
+.menu_lng .menu_svg {
+  background-color: #ffe7e7;
 }
 
 .menu_burger {
@@ -383,6 +391,7 @@ img {
   justify-content: space-between;
   align-items: center;
   width: 77px;
+  height: 40px;
   background-color: #ffffff;
   border-color: transparent;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05), 0px 1px 2px rgba(0, 0, 0, 0.18);
@@ -390,8 +399,14 @@ img {
 }
 
 .menu_svg {
+  display: block;
   width: 16px;
-  height: 14px;
+  height: 16px;
+}
+
+.menu_icon {
+  width: 16px;
+  height: 10px;
 }
 
 .menu_link--circle {
@@ -408,7 +423,6 @@ img {
 .hero {
   margin: 0;
   padding: 118px 60px;
-  margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
   max-width: 1600px;
@@ -426,7 +440,59 @@ img {
 }
 
 .hero_title {
+  padding-top: 160px;
   font-weight: 900;
   font-size: 36px;
   color: #ffffff;
+}
+
+.platforms_title {
+  display: inline;
+  color: #9b1c3d;
+  border-bottom: 4px solid #9b1c3d;
+  border-radius: 4px;
+}
+
+.platform_list {
+  margin-top: 30px;
+}
+@media screen and (min-width: 768px) {
+  .platform_list {
+    display: flex;
+  }
+}
+
+.platform_item {
+  height: 180px;
+}
+@media screen and (max-width: 767px) {
+  .platform_item {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 375px) {
+  .platform_item {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .platform_item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    max-width: 320px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .platform_item {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+.platform_img {
+  display: block;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

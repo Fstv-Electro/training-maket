@@ -67,3 +67,7 @@ img {
 .title {
     @extend %title;
 }
+
+.list {
+    @extend %list;
+}
