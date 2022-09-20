@@ -272,7 +272,7 @@ summary {
   line-height: 1.3;
 }
 
-.cop-con_link, .company_link, .company, .social_link, .social_list, .social, .contacts_list, .off-info_link, .off-info_list, .info_link, .info_list, .exclusives_link, .page-header_link, .list {
+.con_list, .cop-con_link, .company_link, .company, .social_link, .social_list, .social, .contacts_list, .off-info_link, .off-info_list, .info_link, .info_list, .exclusives_link, .page-header_link, .list {
   list-style: none;
   text-decoration: none;
   padding: 0;
@@ -348,6 +348,7 @@ img {
   margin: 0;
   padding: 0;
   height: 50px;
+  max-width: 100%;
   background-color: #ffe7e7;
 }
 
@@ -362,6 +363,13 @@ img {
 .page-header_link {
   color: #9b1c3d;
 }
+@media screen and (max-width: 375px) {
+  .page-header_link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.3;
+  }
+}
 
 .menu {
   display: flex;
@@ -374,6 +382,7 @@ img {
 }
 
 .menu_lng {
+  position: relative;
   background-color: #ffffff;
   border-color: transparent;
   border-radius: 50%;
@@ -383,6 +392,10 @@ img {
 }
 
 .menu_lng .menu_svg {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
   background-color: #ffe7e7;
 }
 
@@ -425,7 +438,8 @@ img {
   padding: 118px 60px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1600px;
+  max-width: 100vw;
+  width: 100%;
   height: 600px;
   text-align: center;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(47, 48, 58, 0.6) 60%), url("../../../images/bcg1920.jpg");
@@ -702,7 +716,7 @@ img {
   content: " ";
   left: 0;
   bottom: 10px;
-  width: 100%;
+  max-width: 100%;
   height: 5px;
   border-bottom: 3px solid rgba(94, 121, 121, 0.5);
   border-radius: 2px;
@@ -741,6 +755,14 @@ img {
 
 @media screen and (min-width: 768px) {
   .con {
-    margin-left: auto;
+    justify-self: flex-end;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .con_list {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
   }
 }/*# sourceMappingURL=main.css.map */
