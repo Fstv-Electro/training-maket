@@ -3,36 +3,53 @@
 
     @media screen and (min-width: $tablet) {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
     }
 }
 
 .platform_item {
-    height: 180px;
+    position: relative;
+    text-align: center;
+    width: 320px;
 
     @media screen and (max-width: 767px) {
-        margin-bottom: 30px;
-    }
-
-    @media screen and (min-width: $mobile) {
-        width: 100%;
-        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
     }
 
     @media screen and (min-width: $tablet) {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
-        width: 100%;
-        max-width: 320px;
+        width: 285px;
     }
 
     @media screen and (min-width: $desktop) {
-        width: 100%;
-        max-width: 300px;
+        width: 250px;
     }
 }
 
 .platform_img {
     display: block;
+    width: 320px;
+    height: 180px;
+    border-radius: 5px;
+    border: 1px solid $text-b;
+}
+
+.platform_name {
+    position: absolute;
+    @extend %title;
+    font-size: 16px;
     width: 100%;
+    height: 10%;
+    text-transform: lowercase;
+
+    color: #1f1f1f;
+    background: rgba($bcg-acc,0.7);
+    border-radius: 5px;
 }

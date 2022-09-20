@@ -1,0 +1,23 @@
+.footer {
+    background-color: $bcg-d;
+
+    
+}
+
+.footer .container {
+    padding: 15px 15px;
+}
+
+.information {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        justify-content: space-between;
+    }
+}
+

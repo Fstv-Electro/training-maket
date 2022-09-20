@@ -1,0 +1,28 @@
+.off-info::before {
+    display: block;
+    content: " ";
+    left: 0;
+    bottom: 10px;
+    width: 100px;
+    height: 5px;
+    border-bottom: 3px solid $bcg-acc;
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+
+.off-info {
+    margin-bottom: 30px;
+}
+
+.off-info_list {
+    @extend %list;
+}
+
+.off-info_item {
+    margin-bottom: 5px;
+}
+
+.off-info_link {
+    @extend %list;
+    color: $text-f;
+}

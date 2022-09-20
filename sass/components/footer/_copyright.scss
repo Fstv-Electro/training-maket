@@ -1,0 +1,51 @@
+.cop-con::before {
+    display: block;
+    content: " ";
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    height: 5px;
+    border-bottom: 3px solid rgba($text-hf, 0.5);
+    border-radius: 2px;
+    margin-bottom: 20px;
+
+    
+
+    @media screen and (min-width: $desktop) {
+        border: none;
+    }
+}
+
+.cop-con {
+    margin-right: 0;
+}
+
+.cop-con_list {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+    }
+
+    @media screen and (min-width: $desktop) {
+        justify-content: space-evenly;
+    }
+}
+
+
+.cop-con_item {
+    margin-bottom: 10px;
+}
+
+.cop-con_link {
+    @extend %list;
+    @extend %text;
+    color: rgba($text-hw, 0.6);
+}
+
+.con {
+    @media screen and (min-width: $tablet) {
+        margin-left: auto;
+    }
+}

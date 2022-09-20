@@ -1,0 +1,28 @@
+.info::before {
+    display: block;
+    content: " ";
+    left: 0;
+    bottom: 10px;
+    width: 100px;
+    height: 5px;
+    border-bottom: 3px solid $bcg-w;
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+
+.info {
+    margin-bottom: 30px;
+}
+
+.info_list {
+    @extend %list;
+}
+
+.info_item {
+    margin-bottom: 5px;
+}
+
+.info_link {
+    @extend %list;
+    color: $text-f;
+}

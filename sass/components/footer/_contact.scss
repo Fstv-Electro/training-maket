@@ -1,0 +1,68 @@
+.contacts::before {
+    display: block;
+    content: " ";
+    left: 0;
+    bottom: 10px;
+    width: 100px;
+    height: 5px;
+    border-bottom: 3px solid $bcg-hacc;
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+
+
+.contacts {
+    margin-bottom: 30px;
+}
+
+.contacts_list {
+    @extend %list;
+
+}
+
+    // Social
+
+.social {
+    @extend %list;
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+    height: 25px;
+    margin-bottom: 20px;
+}
+
+.social_list {
+    @extend %list;
+}
+
+.social_item {
+    margin-bottom: 5px;
+}
+
+.social_link {
+    @extend %list;
+    color: $text-f;
+}
+
+.social_svg {
+    color: $text-f;
+}
+
+.social_icon {
+    fill: currentColor;
+}
+
+    // Company
+
+.company {
+    @extend %list;
+}
+
+.company_item{
+    margin-bottom: 10px;
+}
+
+.company_link {
+    @extend %list;
+    color: $text-f;
+}
